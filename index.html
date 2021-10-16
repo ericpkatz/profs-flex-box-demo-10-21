@@ -1,6 +1,9 @@
 <html>
   <head>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       background-color: cornSilk;
       margin: 0;
@@ -25,6 +28,19 @@
       text-decoration: none;
     }
 
+    body > div {
+      display: flex;
+      border: solid 1px blue;
+      flex-wrap: wrap;
+    }
+    div > div {
+      border: solid 1px red;
+      height: 100px;
+      width: calc((100%/3) - 2rem);
+      padding: 1rem;
+      margin: 1rem;
+    }
+
     @media (max-width: 500px){
       nav {
         flex-direction: column;
@@ -40,5 +56,14 @@
       <a href='#'>Products</a>
       <a href='#'>Contact</a>
     </nav>
+    <div>
+      <div>one</div>
+      <div>two</div>
+      <div>three</div>
+      <div>four</div>
+      <div>five</div>
+      <div>six</div>
+      <div>seven</div>
+    </div>
   </body>
 </html>

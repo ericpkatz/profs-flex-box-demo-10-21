@@ -1,5 +1,44 @@
 <html>
+  <head>
+  <style>
+    body {
+      background-color: cornSilk;
+      margin: 0;
+      font-family: verdana;
+    }
+    nav {
+      background-color: dodgerBlue;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    nav a:first-child {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: cornSilk;
+      text-decoration: none;
+    }
+
+    @media (max-width: 500px){
+      nav {
+        flex-direction: column;
+      }
+    }
+    
+  </style>
+  </head>
   <body>
-    <h1>Testing</h1>
+    <nav>
+      <a href='#'>Home</a>
+      <a href='#'>About</a>
+      <a href='#'>Products</a>
+      <a href='#'>Contact</a>
+    </nav>
   </body>
 </html>
